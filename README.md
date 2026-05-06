@@ -32,6 +32,10 @@ Data flows through three medallion layers:
 
 ---
 
+## 📊 Dashboard
+
+![Dashboard](docs/Dashboard.png)
+
 ## 📊 Key Insights
 
 ### 1. Munich commands a 2x price premium over Berlin
