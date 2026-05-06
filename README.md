@@ -64,9 +64,10 @@ Data flows through three medallion layers:
 
 ## 📁 Project Structure
 
+```
 airbnb_project/
 ├── models/
-│   ├── bronze/          # Pass-through models from raw Unity Catalog tables
+│   ├── bronze/
 │   │   ├── sources.yml
 │   │   ├── berlin_listings.sql
 │   │   ├── berlin_reviews.sql
@@ -74,13 +75,13 @@ airbnb_project/
 │   │   ├── munich_listings.sql
 │   │   ├── munich_reviews.sql
 │   │   └── munich_calendar.sql
-│   ├── silver/          # Staging + intermediate transformation models
+│   ├── silver/
 │   │   ├── schema.yml
 │   │   ├── stg_listings.sql
 │   │   ├── stg_reviews.sql
 │   │   ├── stg_calendar.sql
 │   │   └── int_listings_enriched.sql
-│   └── gold/            # Business-ready mart models
+│   └── gold/
 │       ├── schema.yml
 │       ├── mart_city_price_comparison.sql
 │       ├── mart_host_segments.sql
@@ -93,8 +94,7 @@ airbnb_project/
 │   └── lineage_graph.png
 ├── dbt_project.yml
 └── README.md
-
----
+```
 
 ## ⚙️ Setup and Usage
 
