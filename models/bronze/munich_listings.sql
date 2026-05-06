@@ -1,0 +1,1 @@
+SELECT * FROM {{ source('munich', 'listings_raw') }}

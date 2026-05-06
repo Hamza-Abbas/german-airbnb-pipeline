@@ -1,0 +1,1 @@
+select * from {{ source('berlin', 'calendar_raw') }}

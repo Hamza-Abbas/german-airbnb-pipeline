@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: berlin
+    catalog: airbnb
+    schema: berlin
+    tables:
+      - name: listings_raw
+      - name: reviews_raw
+      - name: calendar_raw
+
+  - name: munich
+    catalog: airbnb
+    schema: munich
+    tables:
+      - name: listings_raw
+      - name: reviews_raw
+      - name: calendar_raw

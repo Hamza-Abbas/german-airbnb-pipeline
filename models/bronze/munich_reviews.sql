@@ -1,0 +1,1 @@
+SELECT * FROM {{ source('munich', 'reviews_raw') }}

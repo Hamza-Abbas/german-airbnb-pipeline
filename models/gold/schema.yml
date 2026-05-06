@@ -1,0 +1,58 @@
+version: 2
+
+models:
+  - name: mart_city_price_comparison
+    description: "Average and median nightly prices by city and room type"
+    columns:
+      - name: city
+        tests:
+          - not_null
+      - name: room_type
+        tests:
+          - not_null
+      - name: avg_price_per_night
+        tests:
+          - not_null
+
+  - name: mart_host_segmentation
+    description: "Host segmentation analysis comparing casual vs professional hosts"
+    columns:
+      - name: city
+        tests:
+          - not_null
+      - name: host_type
+        tests:
+          - not_null
+
+  - name: mart_availability_trends
+    description: "Monthly occupancy rates by city derived from calendar data"
+    columns:
+      - name: city
+        tests:
+          - not_null
+      - name: month
+        tests:
+          - not_null
+      - name: occupancy_rate_pct
+        tests:
+          - not_null
+
+  - name: mart_neighbourhood_summary
+    description: "Supply and demand metrics by neighbourhood and city"
+    columns:
+      - name: city
+        tests:
+          - not_null
+      - name: neighbourhood
+        tests:
+          - not_null
+
+  - name: mart_review_activity
+    description: "Monthly review volume as a proxy for booking activity over time"
+    columns:
+      - name: city
+        tests:
+          - not_null
+      - name: review_month
+        tests:
+          - not_null
