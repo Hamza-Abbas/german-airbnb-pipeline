@@ -66,40 +66,6 @@ Data flows through three medallion layers:
 
 ---
 
-## 📁 Project Structure
-
-```
-airbnb_project/
-├── models/
-│   ├── bronze/
-│   │   ├── sources.yml
-│   │   ├── berlin_listings.sql
-│   │   ├── berlin_reviews.sql
-│   │   ├── berlin_calendar.sql
-│   │   ├── munich_listings.sql
-│   │   ├── munich_reviews.sql
-│   │   └── munich_calendar.sql
-│   ├── silver/
-│   │   ├── schema.yml
-│   │   ├── stg_listings.sql
-│   │   ├── stg_reviews.sql
-│   │   ├── stg_calendar.sql
-│   │   └── int_listings_enriched.sql
-│   └── gold/
-│       ├── schema.yml
-│       ├── mart_city_price_comparison.sql
-│       ├── mart_host_segments.sql
-│       ├── mart_availability_trends.sql
-│       ├── mart_neighbourhood_summary.sql
-│       └── mart_review_activity.sql
-├── macros/
-│   └── generate_schema_name.sql
-├── docs/
-│   └── lineage_graph.png
-├── dbt_project.yml
-└── README.md
-```
-
 ## ⚙️ Setup and Usage
 
 ### Prerequisites
